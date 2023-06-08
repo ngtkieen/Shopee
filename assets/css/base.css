@@ -25,6 +25,9 @@ html {
 a {
     text-decoration: none;
 }
+li {
+    list-style: none;
+}
 
 .grid {
     width: 1200px;
