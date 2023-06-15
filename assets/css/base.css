@@ -28,12 +28,14 @@ a {
 li {
     list-style: none;
 }
-
+/* Responsive  */
 .grid {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
+
+/* Test grid */
 
 .grid__full_width {
     width: 100%;
@@ -42,8 +44,20 @@ li {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
-
+.grid__column--2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((2 / 12) * 100%);
+} 
+.grid__column--10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc((10 / 12) * 100%);
+    
+} 
 /* Animation */
 @keyframes fadeIn {
     from {
@@ -105,10 +119,9 @@ li {
     cursor: pointer;
     color: var(--text--color);
     background-color: var(--white--color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-
 }
 .btn.btn--normal:hover {
     background-color: rgba(0, 0, 0, 0.05);
@@ -128,4 +141,7 @@ li {
 .btn--size--s {
     height: 32px;
     line-height: 32px;
+}
+.app__content {
+    padding: 36px 0;
 }
