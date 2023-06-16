@@ -1090,3 +1090,61 @@ i.home--product--item__like--icon--fill {
     font-size: 1.3rem;
     font-weight: 500;
 }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  56px 0 32px 0 ;
+}
+.pagination--item {
+    margin: 0 12px;
+}
+.pagination--item__link {
+    --height: 30px;
+    display: block;
+    font-size: 1.6rem;
+    color: var(--text--color);
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+    
+}
+.pagination--item__link:hover {
+    opacity: 0.9;
+}
+.pagination--item__page--current {
+    background-color: var(--primary--color);
+    color: var(--white--color);
+}
+
+/* footer */
+.footer__heading {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin: 24px 0;
+}
+.footer--list__item {
+    color: var(--text--color);
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.footer--list__item:hover {
+    color: var(--primary--color);
+}
+.footer--download {
+    display: flex;
+}
+.footer--list__item img {
+    width: 80px;
+}
+.footer--list__item--app img{
+    width: 80px;
+}
+.footer--list__app {
+    margin-top: 4px;
+}
